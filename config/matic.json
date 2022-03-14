@@ -1,0 +1,17 @@
+{
+    "network": "matic",
+    "Land_address": "0x7d23e34E676212cEFEB715ee023D15FD2049288b",
+    "NFTStore_address": "0x7B5f5A3f675d18d5D33b0b3d7e3a35D3F77d4e28",
+    "Marketplace_address": "0xD5718D48cEfA70A9c452D3c82DcB86b71C5D473C",
+    "MELD_address": "0x48844ddba89799dc40ec31728dac629802d407f3",
+    "NFTFactory_address": "0xEeD19fd5185f484dd67c1a6552d513876F095054",
+    "Faucet_address": "",
+    "VestPool_address": "",
+    "Meland1155Wearable_address": "0x6A7B9fED27AAAD13A91d56B388d370ac5E485a37",
+    "Meland1155Placeable_address": "0xBFb344a498d6BF759c3066754767270C7A08a4d1",
+    "Meland1155LandFuture_address": "0x1A7372C85E1207b8497532aD4147a597172fDF59",
+    "Meland1155MELDFuture_address": "0x64c87BCae4AA5dA669d6CBCBD710dC3d020e6A73",
+    "MelandExchange_address": "0xd3FD1F88DBf232461569DECc35a0cB57b0a6B427",
+    "MelandTier_address": "0x061f636b7beA87C65276fb9ec7119F88d9A4B6E7",
+    "start_block": "23029177"
+}

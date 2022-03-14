@@ -1,0 +1,30 @@
+type SwordBlockTimeLine @entity {
+	id: ID!
+	tokenId: String!
+	imgURL: String!
+}
+
+type Earn @entity {
+	id: ID!
+	amount: BigInt!
+}
+
+type EarnLog @entity {
+	id: ID!
+	earnId: ID!
+	amount: BigInt!
+	tokenId: String!
+	earnedAt: BigInt!
+}
+
+type SwordBlock @entity {
+	id: ID!
+	ownerId: Bytes!
+	tokenId: String!
+	imgURL: String!
+}
+
+type Minted @entity {
+	id: ID!
+	sbs: [SwordBlock!]!
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "types": [
+            "@graphprotocol/graph-ts",
+            "node"
+        ],
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noEmitOnError": true,
+        "strictNullChecks": true,
+        "experimentalDecorators": true
+    }
+}

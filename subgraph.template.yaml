@@ -1,0 +1,38 @@
+specVersion: 0.0.3
+schema:
+  file: ./schema.graphql
+dataSources:
+  - name: Web3Sword
+    kind: ethereum/contract
+    network: {{network}}
+    source:
+      address: "{{Web3Sword_address}}"
+      startBlock: {{start_block}}
+      abi: Web3Sword
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ./src/maps/sword.ts
+      entities:
+        - SwordBlock
+      abis:
+        - name: Web3Sword
+          file: ./abis/Web3Sword.json
+      eventHandlers:
+        - event: BuySuccess(indexed address,uint256,uint256)
+          handler: handleBuySuccess
+        - event: SocialClaimSuccess(indexed address,uint256,uint8)
+          handler: handleSocialClaimSuccess
+        - event: Withdrawal(indexed address,uint256)
+          handler: handleWithdrawal
+        - event: ResetPrice(uint256)
+          handler: handleResetPrice
+        - event: SelledCountUpdate(uint256)
+          handler: handleSelledCountUpdate
+        - event: URI(string,indexed uint256)
+          handler: handleURI
+        - event: TransferSingle(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleTransferSingle
+        - event: TransferBatch(indexed address,indexed address,indexed address,uint256[],uint256[])
+          handler: handleTransferBatch
